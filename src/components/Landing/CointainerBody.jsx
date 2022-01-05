@@ -1,5 +1,6 @@
 import React from "react";
 import Carrousel from "./Carrousel";
+import Footer from "./Footer";
 
 const CointainerBody = () => {
   return (
@@ -57,12 +58,10 @@ const CointainerBody = () => {
        Laborum praesentium magnam totam libero id minima quasi optio commodi necessitatibus quis quaerat, neque voluptatem? Possimus error laudantium repudiandae! Sapiente delectus quisquam voluptatem quasi in, ad fuga nulla pariatur distinctio.
        Magni mollitia consequuntur aliquid? Iure, quibusdam inventore earum incidunt aspernatur repellat voluptas unde saepe nesciunt natus laborum! Enim vero neque expedita, suscipit odio quibusdam itaque possimus quos quo id repudiandae.
        Saepe architecto at eaque consequatur. Impedit sit sapiente deserunt assumenda quia unde dolore in est nobis explicabo delectus veniam exercitationem consequatur quisquam aliquam, saepe voluptatibus a sequi vero mollitia ratione?
-       Doloribus porro eius minima earum libero illo, quo rerum expedita, ullam quae dolores minus aut. Commodi molestias error eius ratione minus, necessitatibus aperiam, nemo aliquid aut rerum laudantium excepturi corrupti.
-       Earum quod modi ipsa nisi veniam ex mollitia asperiores ipsum deserunt odit. Explicabo tempore placeat, sequi autem qui quisquam, illo, libero officia quaerat aperiam reprehenderit doloribus aliquam reiciendis perspiciatis. Atque?
-       Quisquam, in amet illum consectetur voluptates obcaecati fugit qui inventore minima at suscipit, aperiam iusto cupiditate nisi dignissimos laboriosam nulla ipsam. Architecto recusandae quam quia distinctio voluptas omnis eaque rem.
+       
       </p>
 
-        <button className='btn btn-primary'>Cotiza</button>
+        <Footer />
     </>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark text-light">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -15,13 +15,13 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a className="navbar-brand" href="#">
-            Seguros Car
-          </a>
+        <div
+          className="collapse navbar-collapse text-light mx-2 px-2"
+          id="navbarTogglerDemo01"
+        >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li className="nav-item">
-            <Link to='/cotizacion'>Solicita tu Cotizacion</Link>
+            <li className="nav-item py-3 px-4 w-100  ">
+              <Link to="/cotizacion" className=" text-light lead">Solicita tu Cotizacion</Link>
             </li>
           </ul>
         </div>

@@ -1,10 +1,11 @@
 import React from 'react';
+import Formulario from '../components/Formulario/Formulario';
 
 const Cotizacion = () => {
     return (
         <>
         
-            <h1>Formulario cotizacion</h1>
+            <Formulario /> 
         </>
     )
 }
