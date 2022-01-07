@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { SeguroConsumer } from "../../Context/SegurosProvider";
+import Resultado from "../Resultado/Resultado";
+import Spinner from "../Spinner/Spinner";
 
 const Cotizacion = () => {
-    return (
-        <>
-            <div className='d-flex flex-md-column mx-auto py-5'>
-                
-            </div>
-        </>
-    )
-}
+  const { cotizado } = SeguroConsumer();
+  const [loading, setLoading] = useState(false);
 
-export default Cotizacion
+  useEffect(() => {
+    if (Object.keys(cotizado).length){
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 5000);
+    }
+  }, [cotizado]);
+
+ 
+
+  return (
+    <>
+      <div className=" bg-dark text-light w-50 mx-auto text-center py-3 rounded-3">
+        {loading ? <Spinner /> :  <Resultado cotizado={cotizado} /> }
+      </div>
+    </>
+  );
+};
+
+export default Cotizacion;

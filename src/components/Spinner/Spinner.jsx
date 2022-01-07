@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const Spinner = () => {
-    return (
-        <>
-            <h1>Soy Spinner</h1>
-        </>
-    )
-}
+  return (
+    <>
+      <span
+        class="spinner-grow spinner-grow-sm"
+        role="status"
+        aria-hidden="true"
+      ></span>
+      <span class="sr-only">Loading...</span>
+    </>
+  );
+};
 
-export default Spinner
+export default Spinner;
